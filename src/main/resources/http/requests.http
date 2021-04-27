@@ -1,0 +1,68 @@
+POST http://localhost:8080/login
+Content-Type: application/json
+
+{
+  "email": "aksanovkamil@gmail.com",
+  "password": "12345678Kamil"
+}
+
+###
+
+GET http://localhost:8080/teachers
+X-TOKEN: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwicm9sZSI6IkFETUlOIiwic3RhdGUiOiJBQ1RJVkUiLCJleHAiOjE2MTk0NjcxNTIsImVtYWlsIjoiYWtzYW5vdmthbWlsQGdtYWlsLmNvbSJ9.FFKR0LLiPh3Wq_EhOf8XHRLy1gGDo6KwhKytBXzXBYM
+
+###
+
+POST http://localhost/teachers
+Content-Type: application/json
+
+{
+  "firstName": "Марсель",
+  "lastName": "Сидиков"
+}
+
+###
+
+POST http://localhost/teachers
+Content-Type: application/json
+
+{
+  "firstName": "Михаил",
+  "lastName": "Абрамский"
+}
+
+###
+
+PUT http://localhost/teachers/1
+Content-Type: application/json
+
+{
+  "firstName": "Марсель",
+  "lastName": "Ситдиков"
+}
+
+###
+
+DELETE http://localhost/teachers/1
+
+###
+
+GET http://localhost:8080/courses
+
+###
+
+POST http://localhost/courses
+Content-Type: application/json
+
+{
+  "title": "Информатика"
+}
+
+###
+
+POST http://localhost/courses/1/teachers
+Content-Type: application/json
+
+{
+  "id": 1
+}
